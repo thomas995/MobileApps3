@@ -1,0 +1,81 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="MVVMJSON.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MVVMJSON"
+    xmlns:viewModel="using:MVVMJSON.ViewModel"
+    xmlns:converters="using:MVVMJSON.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <converters:ObjectExistsToVisible x:Key="ObjectExistsToVisible" />
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,4,0,-4">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <!-- VisualState to be triggered when window 
+                     width is >=720 effective pixels. -->
+                        <AdaptiveTrigger MinWindowWidth = "720" />
+                    </VisualState.StateTriggers>
+
+                    <VisualState.Setters>
+                        <Setter Target = "myPanel.Orientation" Value = "Horizontal" />
+                        <Setter Target = "InfoPanel.Orientation" Value = "Horizontal" />
+
+                    </VisualState.Setters>
+
+                </VisualState>
+
+            </VisualStateGroup>
+
+        </VisualStateManager.VisualStateGroups>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel x:ConnectionId='2' x:Name="myPanel"  Grid.Column="0" Orientation="Vertical" Margin="0,52,0,-52">
+            <ListView x:ConnectionId='11'  x:Name="MainList" 
+                                                                 
+                                                                                     
+              MinWidth="250" Margin="5">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate                                     >
+                        <TextBlock x:ConnectionId='12'                                    />
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='3' x:Name="InfoPanel" Grid.Column="1" Orientation="Vertical"                                                                                                             Margin="0,52,0,-52" >
+            <TextBox x:ConnectionId='6' 
+                                                                                          
+              Margin="5" />
+            <TextBox x:ConnectionId='7' 
+                                                                                              
+              Margin="5" />
+            <TextBox x:ConnectionId='8' 
+                                                                                              
+              Margin="5" />
+            <TextBox x:ConnectionId='9' 
+                                                                                              
+              Margin="5" />
+            <Image x:ConnectionId='10'                                                                                Height="100" Width="100"/>
+        </StackPanel>
+        <TextBlock x:ConnectionId='4' x:Name="txtGameName" x:Uid="uidCoderQuest"  HorizontalAlignment="Left" Margin="4,1,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="50" Grid.ColumnSpan="2" Width="353" FontSize="30" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform TranslateX="100"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Button x:ConnectionId='5' x:Name="btnStartGame" x:Uid="uidNewGame" HorizontalAlignment="Left" Margin="20,249,0,0" VerticalAlignment="Top" Height="65" Width="136" FontSize="24"                           />
+
+    </Grid>
+</Page>
+

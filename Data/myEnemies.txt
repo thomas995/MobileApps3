@@ -1,0 +1,23 @@
+﻿[{"breed" : "Winged Demon", "category" : "Easy","activity" : "1 dmg", "grooming" : "4hp", "image" : "/Images/EnemyImages/Ahriman_398.png"},
+{
+    "breed" : "Spooked Cactus", 
+	"category" : "Easy-Medium", 
+	"activity" : "2 dmg", 
+	"grooming" : "6hp", 
+	"image" : "/Images/EnemyImages/FF_Cactuar_4581.png"},
+
+{	"breed" : "Silent Wolf",
+	"category" : "Medium",
+	"activity" : "3 dmg",
+	"grooming" : "8hp",
+	"image" : "/Images/EnemyImages/a6wjm.jpg"},
+
+{	"breed" : "Angry Mantis", 
+	"category" : "Hard", 
+	"activity" : "4 dmg", 
+	"grooming" : "10hp", 
+	"image" : "/Images/EnemyImages/87-Mantisant.png" }
+]
+
+
+
