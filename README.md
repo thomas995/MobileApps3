@@ -1,4 +1,5 @@
 # MobileApps3
+# MOVE SOLUTION FILE FOR VISUAL STUDIO OUT ONE DIRECTORY BEFORE RUNNING AS THIS IS PLACED INSIDE THE DIRECTORY!!!
 My application for Mobile Apps Development 3 is called Coder Quest RPG. The aim of the game is to survive against as many of the oncoming enemies as possible before your health has completely run out. To help you in your quest, you will have the options of leveling up(if you have enough experience to do so) and potions(which are earned in parts after you defeat an enemy). By leveling up, you recover all your health while also recieving a small increase in your attack stat. By using one of the few potions you will recieve throughout the game, you will increase your current health stat by 20. Before the game starts, you can see the initial stats of the enemies that are picked at random when the game begins. Good luck out there and try to survive as long as you can!!! 
 
 ##MVVM
